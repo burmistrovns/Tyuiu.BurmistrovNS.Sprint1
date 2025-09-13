@@ -1,6 +1,6 @@
-﻿using Tyuiu.BurmistrovNS.Sprint1.Task0.V23.Lib;
+﻿using Tyuiu.BurmistrovNS.Sprint1.Task1.V5.Lib;
 
-namespace Tyuiu.BurmistrovNS.Sprint1.Task0.V23
+namespace Tyuiu.BurmistrovNS.Sprint1.Task1.V5
 {
     internal class Program
     {
@@ -12,23 +12,31 @@ namespace Tyuiu.BurmistrovNS.Sprint1.Task0.V23
             Console.WriteLine("****************************************************************************************************************");
             Console.WriteLine("* Спринт#1                                                                                                     *");
             Console.WriteLine("* Тема: Базовые навыки работы в C#                                                                             *");
-            Console.WriteLine("* Задание#0                                                                                                    *");
-            Console.WriteLine("* Вариант#23                                                                                                    *");
+            Console.WriteLine("* Задание#1                                                                                                    *");
+            Console.WriteLine("* Вариант#5                                                                                                    *");
             Console.WriteLine("* Выполнил: Бурмистров Николай Сергеевич | ИСТНб-25-1                                                          *");
             Console.WriteLine("****************************************************************************************************************");
             Console.WriteLine("* УСЛОВИЕ                                                                                                      *");
-            Console.WriteLine("* Написать программу, которая вычисляет выражение ( 15 / 5 * 4 ) + 1                                           *");
-            Console.WriteLine("* и печатает результат на экране.                                                                              *");
+            Console.WriteLine("* Написать программу, которая запрашивает у пользователя исходные данные,                                      *");
+            Console.WriteLine("* вычисляет результат по формуле 5 + (x * y / 3) и печатает его на экране.                                     *");
             Console.WriteLine("*                                                                                                              *");
             Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ:                                                                                             *");
             Console.WriteLine("****************************************************************************************************************");
-            Console.WriteLine("* ( 15 / 5 * 4 ) + 1                                                                                           *");
+
+            double x, y;
+
+            Console.WriteLine("Введите значение X:");
+            x = Convert.ToDouble(Console.ReadLine());
+
+            Console.WriteLine("Введите значение Y:");
+            y = Convert.ToDouble(Console.ReadLine());
+
             Console.WriteLine("****************************************************************************************************************");
             Console.WriteLine("* РЕЗУЛЬТАТ:                                                                                                   *");
             Console.WriteLine("****************************************************************************************************************");
 
 
-            Console.WriteLine(ds.Calculate());
+            Console.WriteLine(ds.Calculate(x, y));
 
             Console.ReadLine();
 
