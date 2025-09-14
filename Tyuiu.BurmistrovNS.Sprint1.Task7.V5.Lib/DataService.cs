@@ -7,7 +7,7 @@ namespace Tyuiu.BurmistrovNS.Sprint1.Task7.V5.Lib
         public double Calculate(double x)
         {
             double res = ((Math.Log(Math.Abs(Math.Cos(x))))) / ((Math.Log(1 + (Math.Pow(x,2)))));
-            return res;
+            return Math.Round(res, 3);
         }
     }
 }

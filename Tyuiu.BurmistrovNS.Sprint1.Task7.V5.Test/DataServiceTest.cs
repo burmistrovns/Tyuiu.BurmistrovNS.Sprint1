@@ -10,7 +10,7 @@ namespace Tyuiu.BurmistrovNS.Sprint1.Task7.V5.Test
         {
             DataService ds = new DataService();
             double x = 10;
-            double wait = -0.03801836167701159;
+            double wait = -0.038;
             var res = ds.Calculate(x);
             Assert.AreEqual(wait, res);
         }
